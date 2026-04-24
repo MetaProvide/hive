@@ -1,0 +1,24 @@
+services:
+  node:
+    image: hive:latest
+    restart: unless-stopped
+    build:
+      context: .
+      target: production
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    env_file:
+      - .env
+    volumes:
+      - hive-data:/app/storage
+    networks:
+      hejbit-gateway:
+        ipv4_address: 172.20.0.40
+
+volumes:
+  hive-data:
+
+networks:
+  hejbit-gateway:
+    name: hejbit-gateway
+    external: true

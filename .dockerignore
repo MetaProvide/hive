@@ -1,0 +1,23 @@
+# project
+/storage
+/test
+/dist
+
+# env files
+.env
+.env.*
+
+# node
+/node_modules
+
+# docker
+.dockerignore
+Dockerfile
+docker-compose.yml
+
+# ide
+.idea
+.vscode
+.serena
+.claude
+.history
