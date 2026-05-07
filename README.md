@@ -35,12 +35,12 @@ flowchart LR
     H --> K[Kubo gateway + API]
     H --> B[Bee API / Swarm]
     H --> D[Corestore + Hyperdrive]
-    D --> C1[/content/<checksum>]
-    D --> M1[/meta/<checksum>.json]
-    D --> R1[/refs/ipfs/<cid>]
-    D --> R2[/refs/bzz/<hash>]
-    D --> R3[/refs/bridge/ipfs/<cid>]
-    D --> I1[/index/files.json]
+    D --> C1["/content/<checksum>"]
+    D --> M1["/meta/<checksum>.json"]
+    D --> R1["/refs/ipfs/<cid>"]
+    D --> R2["/refs/bzz/<hash>"]
+    D --> R3["/refs/bridge/ipfs/<cid>"]
+    D --> I1["/index/files.json"]
     B --> S[Swarm persistence]
 ```
 
